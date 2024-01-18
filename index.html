@@ -128,74 +128,10 @@
     </div>
   </section>
 
-  <!--
-  <section id="map" class="bg-light">
-    <!-- <div id ="map" class="row"> -->
-    <script>
-      var map;
+  
+  <!-- Route Google Maps -->
 
-      var FR_Paris = { lat: 48.856613, lng: 2.352222 };
-      var FR_Nantes = { lat: 47.218372, lng: -1.553621 };
-      var FR_Bordeaux = { lat: 44.837788, lng: -0.579180 };
-      var FR_LeHavre = { lat: 49.494370, lng: 0.107929 };
-      var FR_Compiegne = { lat: 49.417816, lng: 2.826145 };
-      var FR_Angouleme = { lat: 46.160308, lng: -1.151153 };
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: { lat: 44,59, lng: 1,29 },
-          zoom: 7
-        });
-
-        var marker_prs = new google.maps.Marker({
-          position: FR_Paris,
-          map: map,
-          title: 'Paris, France'
-        });
-        var marker_nnt = new google.maps.Marker({
-          position: FR_Nantes,
-          map: map,
-          title: 'Nantes, France'
-        });
-        var marker_bdx = new google.maps.Marker({
-          position: FR_Bordeaux,
-          map: map,
-          title: 'Bordeaux, France'
-        });
-        var marker_lhv = new google.maps.Marker({
-          position: FR_LeHavre,
-          map: map,
-          title: 'Le Havre, France'
-        });
-        var marker_cmg = new google.maps.Marker({
-          position: FR_Compiegne,
-          map: map,
-          title: 'Compiègne, France'
-        });
-        var marker_ang = new google.maps.Marker({
-          position: FR_Angouleme,
-          map: map,
-          title: 'Angoulême, France'
-        });
-
-        var markers = [marker_prs, marker_nnt, marker_bdx, marker_lhv, marker_cmg, marker_ang];
-
-        var city_index = 0;
-
-        for (city_index = 0; city_index < markers.length; city_index++) {
-          markers[city_index].addListener('load', markers[city_index].setAnimation(google.maps.Animation.DROP));
-        }
-
-      }
-
-
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFflT836XcAinjHQhp-JfM3piRcP7QmTU&callback=initMap"
-      async defer></script>
-    <!-- </div> -->
-  </section>
-
-
+  
   <!-- Equipe -->
   <section class="page-section bg-light" id="equipe">
       <div class="container">
